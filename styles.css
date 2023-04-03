@@ -1,0 +1,68 @@
+/* Global Settings */
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+    background-color: #f2f2f2;
+}
+
+/* grid container */
+.hp-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1rem;
+  height: 100vh;
+  width: 100vw;
+  grid-template-areas: 
+  "Head Head Head" 
+  "Leftside Main Rightside"
+  "Footer Footer Footer";
+}
+
+.hp-header {
+  border: 1px solid black;
+  grid-area: Head;
+  height: 5rem;
+}
+
+.hp-main {
+  border: 1px solid black;
+  grid-area: Main;
+}
+
+.hp-leftside {
+  border: 1px solid black;
+  grid-area: Leftside;
+}
+
+.hp-rightside {
+  border: 1px solid black;
+  grid-area: Rightside;
+}
+
+.hp-footer {
+  border: 1px solid black;
+  grid-area: Footer;
+  position: bottom;
+  height: 5rem;
+}
+
+header {
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+}
+
+footer {
+    position:absolute;
+    bottom:0px;
+    left:0;
+    right:0;
+}
