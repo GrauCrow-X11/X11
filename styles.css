@@ -62,14 +62,39 @@ header {
 
 /* Grid Main */
 .hp-main {
-  border: 1px solid black;
   grid-area: Main;
+  height: 80vh;
+  width: 80vw;
+  margin: 1rem;
+}
+
+/* Grid Main Art */
+
+.hp-art
+{
+    box-sizing: content-box;
+    display: flex;
+	height: 30em;
+	width: 30em;
+	position: relative;
+    margin-top: 134.795px;
+    margin-left: 528px;
+	background:
+
+    linear-gradient(
+        to bottom left, #1c1c1c 20%, #9DA3A4
+    );
+
+    background-repeat: no-repeat;
+	background-color: #f2f2f2;
+	border-radius: 100%;
+	filter: drop-shadow( 0 0 2em rgba( 0,0,0,.3 ) );
 }
 
 /* Grid Rightside */
 .hp-rightside {
-  border: 1px solid black;
   grid-area: Rightside;
+  margin: 1rem;
 }
 /* Grid Footer */
 footer {
