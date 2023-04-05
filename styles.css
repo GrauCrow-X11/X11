@@ -1,6 +1,3 @@
-/* ? All Dot(.) Variant Elements are legacy code from Home Page setup. Changing these values are a WIP */
-/* *Global Settings */
-
 * {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
@@ -27,15 +24,13 @@ body {
 }
 
 /* *Grid Head */
-header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
 
 .header {
   grid-area: Head;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
   height: 5rem;
   background-color: #1c1c1c;
   box-sizing: border-box;
@@ -45,12 +40,9 @@ header {
   padding: 30px 5%;
 }
 
-.header-li {
+.header li, a {
     display: inline-block;
     padding: 0px 20px;
-}
-
-.header-a {
     font-weight: 500;
     font-size: 16px;
     color: #f2f2f2;
@@ -70,28 +62,6 @@ header {
   margin: 1rem;
 }
 
-/* *Grid Main Art */
-
-.hp-art
-{
-    box-sizing: content-box;
-    display: flex;
-	height: 30em;
-	width: 30em;
-	position: relative;
-    margin-top: 134.795px; /* ?Math equation is Grid Area Width - Art Piece Width / 2 = Position */
-    margin-left: 528px; /* ?Math equation is Grid Area height - Art Piece Height / 2 = Position */
-	background:
-/* ?Providing a linear gradient to provide a bit of shading effect */
-    linear-gradient(
-        to bottom left, #1c1c1c 20%, #9DA3A4
-    );
-/* ?To help the background come together more and blend */
-    background-repeat: no-repeat;
-	background-color: #f2f2f2;
-	border-radius: 100%;
-	filter: drop-shadow( 0 0 2em rgba( 0,0,0,.3 ) );
-}
 
 /* *Grid Rightside */
 .rightside {
@@ -101,15 +71,13 @@ header {
 }
 
 /* *Grid Footer */
-footer {
+
+.footer {
+    grid-area: Footer;
     position: absolute;
     bottom: 0px;
     left: 0;
     right: 0;
-  }
-
-.footer {
-    grid-area: Footer;
     height: 5rem;
     background-color: #1c1c1c;
     box-sizing: border-box;
@@ -119,13 +87,9 @@ footer {
     padding: 30px 5%;
 }
 
-.footer-li {
+.footer li, a {
     display: inline-block;
     padding: 0px 20px;
-}
-
-.footer-a {
-    font-weight: 500;
     font-size: 16px;
     color: #f2f2f2;
     transition: all 0.3s ease 0s;
