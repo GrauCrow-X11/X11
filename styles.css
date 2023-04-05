@@ -75,8 +75,7 @@ form {
   font-size: 16px;
   background-color: transparent;
   border: 1px solid black;
-  transition: all 0.3s;
-  padding: 13px;
+  padding: 15px;
   margin-bottom: 15px;
   width:100%;
   box-sizing: border-box;
@@ -95,7 +94,7 @@ textarea {
   border-radius:5px;
   border:0;
   cursor:pointer;
-  color:white;
+  color: #1c1c1c;
   font-size:24px;
   padding-top:10px;
   padding-bottom:10px;
@@ -129,4 +128,18 @@ textarea {
 
 .footer a:hover {
     color: #9DA3A4;
+}
+
+/* *Home Art */
+
+.home-art {
+  margin: auto;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  border: 10px solid #61dafb;
+}
+.home-art {
+  background: radial-gradient(circle, #61dafb 24px);
+  position: relative;
 }
