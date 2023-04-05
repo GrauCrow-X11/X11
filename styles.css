@@ -19,7 +19,7 @@ body {
   width: 100vw;
   grid-template-areas:
     "Head Head Head"
-    "Main Main Rightside"
+    "Main Main Main"
     "Footer Footer Footer";
 }
 
@@ -49,25 +49,57 @@ body {
     transition: all 0.3s ease 0s;
 }
 
-.header-a:hover {
+.header a:hover {
     color: #9DA3A4;
 }
 
 /* *Grid Main */
 .main {
+  box-sizing: border-box;
   display: flex;
   grid-area: Main;
   height: 80vh;
-  width: 80vw;
-  margin: 1rem;
+  width: 100vw;
 }
 
+/* *Contact Form */
 
-/* *Grid Rightside */
-.rightside {
-  display: flex;
-  grid-area: Rightside;
-  margin: 1rem;
+form { 
+  max-width:420px; 
+  margin:50px auto; 
+}
+
+.feedback-input {
+  color:white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  background-color: transparent;
+  border: 1px solid black;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  width: 100%;
+  background:#9DA3A4;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  margin-top:-5px;
 }
 
 /* *Grid Footer */
@@ -82,7 +114,7 @@ body {
     background-color: #1c1c1c;
     box-sizing: border-box;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     padding: 30px 5%;
 }
@@ -95,6 +127,6 @@ body {
     transition: all 0.3s ease 0s;
 }
 
-.footer-a:hover {
+.footer a:hover {
     color: #9DA3A4;
 }
