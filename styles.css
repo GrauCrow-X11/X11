@@ -143,3 +143,32 @@ textarea {
   background: radial-gradient(circle, #61dafb 24px);
   position: relative;
 }
+
+.home-art {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  margin-top: 5%;
+  position: relative;
+  background: red;
+}
+ 
+.home-art::before {
+  height: 250px;
+  width: 15px;
+  content: '';
+  position: absolute;
+  top: 100px;
+  left: 45px;
+  background: white;
+}
+ 
+.home-art::after {
+  height: 15px;
+  width: 100px;
+  content: '';
+  position: absolute;
+  background: red;
+  top: 40px;
+  background: red;
+}
