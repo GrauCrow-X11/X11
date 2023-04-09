@@ -10,29 +10,34 @@
   <body>
     <div class="grid">
       <header class="header">
-        <nav>
+      <div class="header-nested">
+        <nav class="header-nav-links">
           <ul>
             <li><a href="./index.html">Home</a></li>
             <li><a href="./about.html">About</a></li>
             <li><a href="./portfolio.html">Portfolio</a></li>
-            <li><a href="./contact.html">Contact</a></li>
           </ul>
         </nav>
+        <nav class="header-nav-contact">
+          <li><a href="./contact.html">Contact</a></li>
+        </nav>
+      </div>
       </header>
       <main class="main">
 
         <form>      
-            <input name="name" type="text" class="feedback-input" placeholder="Name" />   
-            <input name="email" type="text" class="feedback-input" placeholder="Email" />
-            <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
-            <input type="submit" value="SUBMIT"/>
-        </form>
+          <input name="name" type="text" class="feedback-input" placeholder="Name" />   
+          <input name="email" type="text" class="feedback-input" placeholder="Email" />
+          <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+          <input type="submit" value="SUBMIT"/>
+      </form>
 
       </main>
       <footer class="footer">
-        <nav>
+        <div class="footer-nested">
+        <nav class="footer-nav-links">
           <ul>
-            <li class="footer-li">
+            <li>
               <a
                 href="https://www.linkedin.com/in/jacob-blevins-4b9872263/"
                 alt="LinkedIn"
@@ -41,6 +46,8 @@
             </li>
           </ul>
         </nav>
+        <p class="footer-copyright">&copy; GrauCrow.com 2023</p>
+      </div>
       </footer>
     </div>
   </body>
