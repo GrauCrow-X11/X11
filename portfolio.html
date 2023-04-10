@@ -10,28 +10,35 @@
   <body>
     <div class="grid">
       <header class="header">
-        <nav>
-          <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./portfolio.html">Portfolio</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-          </ul>
-        </nav>
+        <div class="header-nested">
+          <nav class="header-nav-links">
+            <ul>
+              <li class="header-li-nav"><a class="header-a-nav" href="./index.html">Home</a></li>
+              <li class="header-li-nav"><a class="header-a-nav" href="./about.html">About</a></li>
+              <li class="header-li-nav"><a class="header-a-nav" href="./portfolio.html">Portfolio</a></li>
+            </ul>
+          </nav>
+          <nav class="header-nav-contact">
+            <li class="header-li-nav"><a class="header-a-nav" href="./contact.html">Contact</a></li>
+          </nav>
+        </div>
       </header>
       <main class="main"></main>
       <footer class="footer">
-        <nav>
-          <ul>
-            <li class="footer-li">
-              <a
-                href="https://www.linkedin.com/in/jacob-blevins-4b9872263/"
-                alt="LinkedIn"
-                >LinkedIn</a
-              >
-            </li>
-          </ul>
-        </nav>
+        <div class="footer-nested">
+          <nav class="footer-nav-links">
+            <ul>
+              <li class="footer-li-nav">
+                <a class="footer-a-nav"
+                  href="https://www.linkedin.com/in/jacob-blevins-4b9872263/"
+                  alt="LinkedIn"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <p class="footer-copyright">&copy; GrauCrow.com 2023</p>
+        </div>
       </footer>
     </div>
   </body>
