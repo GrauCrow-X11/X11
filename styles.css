@@ -25,6 +25,7 @@ body {
 /* !-------------------------Grid container */
 .grid {
   display: grid;
+  flex-wrap: wrap;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 1rem;
@@ -70,15 +71,16 @@ body {
 
 .header-nested {
   display: grid;
+  flex-wrap: wrap;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   width: 100%;
-  grid-template-areas: "Nav-Links Nav-Contact";
+  grid-template-areas: "Header-Nav-Links Nav-Contact";
 }
 
 .header-nav-links {
   display: flex;
-  grid-area: Nav-Links;
+  grid-area: Header-Nav-Links;
   justify-content: flex-start;
   align-items: center;
 }
@@ -93,6 +95,7 @@ body {
 .main {
   box-sizing: border-box;
   display: grid;
+  flex-wrap: wrap;
   grid-area: Main;
   height: 80vh;
   width: 100vw;
@@ -102,19 +105,20 @@ body {
 
 .index-nested {
   display: grid;
+  flex-wrap: wrap;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   width: 100%;
-  grid-template-areas: "Primary";
+  grid-template-areas: "Body";
 }
 
-.index-primary {
+.index-body {
   display: grid;
-  grid-area: Primary;
+  grid-area: Body;
   padding: 1rem;
 }
 
-.index-primary-h1 {
+.index-body-h1 {
   display: flex;
   color: #1c1c1c;
   justify-content: center;
@@ -122,7 +126,7 @@ body {
   font-size: 4rem;
 }
 
-.index-primary-p {
+.index-body-p {
   display: flex;
   text-decoration: none;
   color: #1c1c1c;
@@ -135,6 +139,7 @@ body {
 
 .about-nested {
   display: grid;
+  flex-wrap: wrap;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   border: 1rem;
@@ -305,15 +310,16 @@ textarea {
 
 .footer-nested {
   display: grid;
+  flex-wrap: wrap;
   grid-template-columns: 1fr;
   grid-template-rows: 2fr;
   grid-template-areas:
-    "Nav-Links"
+    "Footer-Nav-Links"
     "Copyright";
 }
 .footer-nav-links {
   display: flex;
-  grid-area: Nav-Links;
+  grid-area: Footer-Nav-Links;
   justify-content: center;
   align-items: center;
 }
@@ -323,4 +329,90 @@ textarea {
   grid-area: Copyright;
   justify-content: center;
   align-items: center;
+}
+
+/* !-------------------------Media Queries */
+
+@media only screen 
+   and (min-width : 320px) {
+    .grid {  
+      width: clamp(250px);
+     }
+    .header-nested {
+      width: clamp(250px);
+    }
+    .header-nav-links {
+      width: clamp(250px);
+    }
+    .header-nav-contact {
+      width: clamp(250px);
+    }
+    .index-nested {
+      width: clamp(250px);
+    }
+    .index-body {
+      width: clamp(250px);
+    }
+    .about-nested {
+      width: clamp(250px);
+    }
+    .an-about-me {
+      width: clamp(250px);
+    }
+    .an-skills {
+      width: clamp(250px);
+    }
+    .an-goals {
+      width: clamp(250px);
+    }
+    .footer-nested {
+      width: clamp(250px);
+    }
+    .footer-nav-links {
+      width: clamp(250px);
+    }
+    .footer-copyright {
+      width: clamp(250px);
+    }
+}
+
+@media only screen 
+   and (min-width : 768px) {
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      flex-direction: column;
+      grid-template-areas: 
+      "Head"
+      "Main"
+      "Footer";
+     }
+}
+
+@media only screen 
+   and (min-width : 1200px) {
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      flex-direction: column;
+      grid-template-areas: 
+      "Head Head Head"
+      "Main Main Main"
+      "Footer Footer Footer";
+     }
+}
+
+@media only screen 
+   and (min-width : 1600px) {
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      flex-direction: column;
+      grid-template-areas: 
+      "Head Head Head"
+      "Main Main Main"
+      "Footer Footer Footer";
+     }
 }
