@@ -263,28 +263,47 @@ textarea {
       "Main"
       "Footer";
   }
-
+  .header {
+    height: 5rem;
+  }
+  .header-nested {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "Header-Nav-Links" "Nav-Contact";
+  }
+  .header-nav-links {
+    flex-direction: column;
+  }
+  .header-li-nav {
+    padding: 1px;
+  }
+  .header-a-nav {
+    padding: 1px;
+  }
+  .header-nav-contact {
+    flex-direction: column;
+  }
+  .main {
+    height: auto;
+  }
   .home-h1 {
-
+    font-size: 2rem;
+    text-align: center;
+    margin: 2rem;
+    padding: 1rem;
   }
   .home-p {
-
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1rem;
   }
-  .home-img {
-
-  }
-  .about-p {}
-
-  .header-nested {
-
-  }
-
-  .footer-nested {
-    
+  #form {
+    padding: 1.5rem;
+    width: 200px;
   }
 }
 
-@media (min-width: 576px) and (max-width: 768px) {
+@media (min-width: 577px) and (max-width: 991px) {
   .grid {
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
@@ -292,25 +311,68 @@ textarea {
       "Main Main"
       "Footer Footer";
   }
-}
 
-@media (min-width: 768px) and (max-width: 992px) {
-  .grid {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas:
-    "Head Head Head "
-    "Main Main Main"
-    "Footer Footer Footer";
+  .header {
+    height: 5rem;
   }
-}
+  .header-nested {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "Header-Nav-Links" "Nav-Contact";
+  }
+  .header-nav-links {
+    flex-direction: column;
+  }
+  .header-li-nav {
+    padding: 1px;
+  }
+  .header-a-nav {
+    padding: 1px;
+  }
+  .header-nav-contact {
+    flex-direction: column;
+  }
+  .main {
+    height: auto;
+  }
+  .home-h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 2rem;
+    padding: 1rem;
+  }
+  .home-p {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1rem;
+  }
+  #form {
+    padding: 1.5rem;
+    width: 200px;
+  }
+ }
 
-@media (min-width: 992px) and (max-width: 1200px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   .grid {
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
-    "Head Head Head "
-    "Main Main Main"
-    "Footer Footer Footer"
+      "Head Head Head "
+      "Main Main Main"
+      "Footer Footer Footer";
+  }
+  .main {
+    height: auto;
+  }
+  .home-h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 2rem;
+    padding: 1rem;
+  }
+  .home-p {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1rem;
   }
 }
 
