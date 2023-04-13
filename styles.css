@@ -101,24 +101,14 @@ body {
   width: 100vw;
 }
 
-/* ?---------------Nested Index Grid */
+/* ?---------------Nested Home Grid */
 
-.index-nested {
+.home-nested {
   display: grid;
-  flex-wrap: wrap;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
   width: 100%;
-  grid-template-areas: "Body";
 }
 
-.index-body {
-  display: grid;
-  grid-area: Body;
-  padding: 1rem;
-}
-
-.index-body-h1 {
+.home-h1 {
   display: flex;
   color: #1c1c1c;
   justify-content: center;
@@ -126,7 +116,7 @@ body {
   font-size: 4rem;
 }
 
-.index-body-p {
+.home-p {
   display: flex;
   text-decoration: none;
   color: #1c1c1c;
@@ -135,96 +125,29 @@ body {
   font-size: 2rem;
 }
 
+.home-img {
+  width: 250px;
+  justify-self: center;
+  align-self: center;
+  border: 0 0 0 0;
+  border-radius: 50%;
+  border: 3px solid #1c1c1c;
+}
+
 /* ?---------------Nested About Grid */
 
 .about-nested {
   display: grid;
-  flex-wrap: wrap;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  border: 1rem;
-  width: 100vw;
-  height: 80vh;
-  grid-template-areas:
-    "About About Skills"
-    "About About Skills"
-    "Goals Goals Goals";
+  width: 100%;
 }
 
-.an-about-me {
-  display: grid;
-  grid-area: About;
-  padding: 1rem;
-}
-
-.an-about-h1 {
-  display: grid;
+.about-p {
+  display: flex;
+  text-decoration: none;
   color: #1c1c1c;
-  justify-content: center;
-  font-weight: 600;
-  font-size: 3rem;
-}
-
-.an-about-p {
-  display: grid;
-  color: #1c1c1c;
-  justify-content: center;
-  font-weight: 300;
-  font-size: 1.5rem;
-}
-
-.an-about-img {
-  display: grid;
-  height: 250px;
-  width: auto;
   justify-content: center;
   align-items: center;
-}
-
-.an-skills {
-  display: grid;
-  grid-area: Skills;
-  padding: 1rem;
-  justify-content: center;
-  align-items: center;
-}
-
-.an-skills-h1 {
-  display: flex;
-  color: #1c1c1c;
-  justify-content: center;
-  font-weight: 400;
-  font-size: 1.5;
-}
-
-.an-skills-p {
-  display: flex;
-  color: #1c1c1c;
-  justify-content: center;
-  font-weight: 150;
-  font-size: 1rem;
-}
-
-.an-goals {
-  display: grid;
-  grid-area: Goals;
-  padding: 1rem;
-}
-
-.an-goals-h1 {
-  display: flex;
-  color: #1c1c1c;
-  justify-content: center;
-  font-weight: 400;
-  font-size: 1.5;
-}
-
-.an-goals-p {
-  display: flex;
-  color: #1c1c1c;
-  justify-content: center;
-  font-weight: 150;
-  font-size: 1rem;
+  font-size: 2rem;
 }
 
 /* !-------------------------Contact Form */
@@ -310,7 +233,6 @@ textarea {
 
 .footer-nested {
   display: grid;
-  flex-wrap: wrap;
   grid-template-columns: 1fr;
   grid-template-rows: 2fr;
   grid-template-areas:
@@ -333,86 +255,71 @@ textarea {
 
 /* !-------------------------Media Queries */
 
-@media only screen 
-   and (min-width : 320px) {
-    .grid {  
-      width: clamp(250px);
-     }
-    .header-nested {
-      width: clamp(250px);
-    }
-    .header-nav-links {
-      width: clamp(250px);
-    }
-    .header-nav-contact {
-      width: clamp(250px);
-    }
-    .index-nested {
-      width: clamp(250px);
-    }
-    .index-body {
-      width: clamp(250px);
-    }
-    .about-nested {
-      width: clamp(250px);
-    }
-    .an-about-me {
-      width: clamp(250px);
-    }
-    .an-skills {
-      width: clamp(250px);
-    }
-    .an-goals {
-      width: clamp(250px);
-    }
-    .footer-nested {
-      width: clamp(250px);
-    }
-    .footer-nav-links {
-      width: clamp(250px);
-    }
-    .footer-copyright {
-      width: clamp(250px);
-    }
-}
-
-@media only screen 
-   and (min-width : 768px) {
-    .grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      flex-direction: column;
-      grid-template-areas: 
+@media (max-width: 576px) {
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
       "Head"
       "Main"
       "Footer";
-     }
+  }
+
+  .home-h1 {
+
+  }
+  .home-p {
+
+  }
+  .home-img {
+
+  }
+  .about-p {}
+
+  .header-nested {
+
+  }
+
+  .footer-nested {
+    
+  }
 }
 
-@media only screen 
-   and (min-width : 1200px) {
-    .grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
-      flex-direction: column;
-      grid-template-areas: 
-      "Head Head Head"
-      "Main Main Main"
-      "Footer Footer Footer";
-     }
+@media (min-width: 576px) and (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "Head Head"
+      "Main Main"
+      "Footer Footer";
+  }
 }
 
-@media only screen 
-   and (min-width : 1600px) {
-    .grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
-      flex-direction: column;
-      grid-template-areas: 
-      "Head Head Head"
+@media (min-width: 768px) and (max-width: 992px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+    "Head Head Head "
+    "Main Main Main"
+    "Footer Footer Footer";
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+    "Head Head Head "
+    "Main Main Main"
+    "Footer Footer Footer"
+  }
+}
+
+@media (min-width: 1200px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "Head Head Head "
       "Main Main Main"
       "Footer Footer Footer";
-     }
+  }
 }
