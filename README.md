@@ -13,8 +13,6 @@
     - ```! = Global/Parent Element```
     - ```? = Child Element```
     - ```* = Explanation of Code```
-        - ```an = about-nested | A nested grid within the About Page's Main Grid```
-        - ```pn = portfolio-nested | A nested grid within the Portfolio's Main Grid```
 
 ## Each Page Represents Something I Can Offer
 
